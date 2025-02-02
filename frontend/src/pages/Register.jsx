@@ -20,4 +20,8 @@ function Register() {
         <div>
             <h2>Register</h2>
             <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        </div>
+    );
+}
 
+export default Register;
