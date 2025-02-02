@@ -25,38 +25,38 @@
 ## 🔧 Setup Instructions
 ### 1️⃣ Clone the Repository
 
-git clone https://github.com/your-username/spread.git
-cd spread
+    git clone https://github.com/your-username/spread.git
+    cd spread
 
 ### 2️⃣ Backend Setup (Django)
 
-cd backend
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
+    cd backend
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    pip install -r requirements.txt
+    python manage.py migrate
+    python manage.py runserver
 
 API runs at: http://127.0.0.1:8000/api/
 
 
 ### 3️⃣ Frontend Setup (React)
 
-cd frontend
-npm install
-npm run dev
+    cd frontend
+    npm install
+    npm run dev
 
 Frontend runs at: http://localhost:5173/
 
 ## 📌 API Endpoints
-Method	Endpoint	Description
-POST	/api/auth/register	Register a new user
-POST	/api/auth/login	Authenticate & receive JWT token
-POST	/api/documents/upload	Upload a document
-GET	/api/documents/list	Fetch all uploaded documents
-POST	/api/reading/start	Start a reading session
-POST	/api/reading/stop	Stop and save session progress
-GET	/api/reading/{doc_id}/progress	Get user reading progress
+    Method	Endpoint	Description
+    POST	/api/auth/register	Register a new user
+    POST	/api/auth/login	Authenticate & receive JWT token
+    POST	/api/documents/upload	Upload a document
+    GET	/api/documents/list	Fetch all uploaded documents
+    POST	/api/reading/start	Start a reading session
+    POST	/api/reading/stop	Stop and save session progress
+    GET	/api/reading/{doc_id}/progress	Get user reading progress
 
 ## 💡 Future Enhancements
 
